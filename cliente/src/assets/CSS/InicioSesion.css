@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 150px 0 0 0;
+}
+
+.container .forms{
+    display: flex;
+    align-items: center;
+    max-width: 430px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 340px;
+}
+
+
+.container .form{
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+    transition: margin-left .18 ease;
+}
+
+.container .form .title{
+  position: relative;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.form .title::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 3px;
+  width: 50px;
+  background-color: #4CA7E4;
+  border-radius: 25px;
+}
+
+.form .input-field{
+  position: relative;
+  height: 30px;
+  width: 100%;
+  margin-top: 25px;
+}
+#massage{
+  position: absolute;
+  color: #333;
+  padding-bottom: 10px;
+  font-size: 13px;
+  display: none;
+}
+
+.input-field input, .input-field select{
+  height: 100%;
+  width: 100%;
+  padding: 0 35px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid transparent;
+}
+.input-field select option{
+  color: #999;
+}
+
+.input-field input:focus, .input-field select:focus{
+  border-bottom-color:#4CA7E4;
+}
+
+.input-field i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 23px;
+  transition: all .2s ease;
+}
+
+.input-field i.icon{
+  left: 0;
+}
+
+.input-field i.showHipePw{
+  right: 0;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.form .checkbox-text{
+  margin-top: 20px;
+  align-items: center;
+}
+
+.checkbox-text .checkbox-content{
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-content input{
+  margin: 0 8px -2px 4px;
+  accent-color: #4CA7E4;
+}
+
+.form .text{
+  color: #333;
+  font-size: 14px;
+}
+
+.form a{
+  color: #4CA7E4;
+  text-decoration: none;
+}
+.form a:hover{
+  text-decoration: underline;
+}
+
+.form .button{
+  margin-top: 35px;
+}
+
+.form .button input{
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  background-color: #4CA7E4;
+  cursor: pointer;
+}
+.button input:hover{
+  background-color: #4197d1;
+}
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.input-field.error {
+  border-color: red;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+
+.footer-bottom {
+  background-color: #144c78;
+  color: white;
+  text-align: center;
+}
